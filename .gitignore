@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ignorar archivos temporales
 *.log
 *.tmp
@@ -7,4 +8,13 @@ node_modules/
 dist/
 
 # Ignorar archivos de configuración
+=======
+# dependencies
+/node_modules
+
+# production
+/build
+
+# misc
+>>>>>>> 5b32fe6 (Updating repo)
 .env

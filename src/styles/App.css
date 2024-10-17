@@ -2,7 +2,11 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* Altura mínima de toda la app */
+<<<<<<< HEAD
   overflow-y: auto; /* Habilitar scroll vertical en toda la app */
+=======
+  overflow-y: hidden; /* Evitar scroll global */
+>>>>>>> 5b32fe6 (Updating repo)
 }
 
 .header {
@@ -16,6 +20,10 @@
 .mainContent {
   display: flex;
   flex: 1;
+<<<<<<< HEAD
+=======
+  min-height: 0; /* Manejar bien el overflow en pantallas pequeñas */
+>>>>>>> 5b32fe6 (Updating repo)
 }
 
 .sidebar {
@@ -35,18 +43,30 @@
 
 .centralContent {
   flex: 1;
+<<<<<<< HEAD
   padding: 2.5px;
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   overflow-y: auto; /* Habilitar scroll solo en el contenido central */
+=======
+  padding: 10px; /* Ajuste del padding para más espacio en contenido */
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow-y:scroll; /* Habilitar scroll solo en el contenido central */
+>>>>>>> 5b32fe6 (Updating repo)
 }
 
 .footer {
   background-color: #282c34;
   color: white;
   text-align: center;
+<<<<<<< HEAD
   padding: 0px;
+=======
+  padding: 10px; /* Dar más espacio al footer */
+>>>>>>> 5b32fe6 (Updating repo)
   font-size: 18px;
 }
 
@@ -66,6 +86,10 @@
   }
   
   .centralContent {
+<<<<<<< HEAD
     padding: 15px;
+=======
+    padding: 15px; /* Mayor separación para pantallas pequeñas */
+>>>>>>> 5b32fe6 (Updating repo)
   }
 }

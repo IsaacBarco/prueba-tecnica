@@ -31,7 +31,11 @@ code {
 .container {
   display: grid;
   grid-template-rows: auto 1fr auto;
+<<<<<<< HEAD
   grid-template-columns: 1fr 3fr 1fr; 
+=======
+  grid-template-columns: 1fr minmax(300px, 3fr) 1fr; /* Ajusta las columnas */
+>>>>>>> 5b32fe6 (Updating repo)
   height: 100vh; /* Ajustar la altura para evitar scroll externo */
   overflow: hidden; /* Eliminar el scroll fuera del container */
 }
@@ -72,14 +76,25 @@ header {
 }
 
 .centralContent {
+<<<<<<< HEAD
   max-height: 80vh; 
+=======
+  max-height: 75vh; /* Asegurar que no se corte en pantallas grandes */
+>>>>>>> 5b32fe6 (Updating repo)
   overflow-y: auto; /* Permitir el scroll vertical */
   padding: 1rem; 
 }
 
 /*** SEARCH BAR STYLES ***/
 .searchBar {
+<<<<<<< HEAD
   display: grid; 
+=======
+  display: flex; /* Cambiar a flex para mejor alineación */
+  flex-direction: column;
+  gap: 5px; /* Añadir un pequeño espacio entre input y botón */
+  width: 100%;
+>>>>>>> 5b32fe6 (Updating repo)
 }
 
 .searchBar input {
@@ -101,8 +116,13 @@ header {
   font-size: 16px;
 }
 
+<<<<<<< HEAD
 .searchBar button:hover{
   background-color:#1f2a34;  
+=======
+.searchBar button:hover {
+  background-color: #1f2a34;  
+>>>>>>> 5b32fe6 (Updating repo)
 }
 
 /*** LANGUAGE BUTTON STYLES ***/
@@ -110,6 +130,7 @@ header {
   display: flex;              
   justify-content: center;    
   align-items: center;        
+<<<<<<< HEAD
 }
 
 .languageButton {
@@ -123,6 +144,19 @@ header {
   transition: background-color 0.3s, transform 0.2s; 
   margin-top: 10px;         
   text-align: center;        
+=======
+  margin-top: 10px; 
+}
+
+.languageButton {
+  background-color: #243642;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 16px;
+>>>>>>> 5b32fe6 (Updating repo)
 }
 
 .languageButton:hover {
@@ -138,7 +172,11 @@ nav {
   padding: 10px 20px; 
   position: sticky;
   top: 0;
+<<<<<<< HEAD
   z-index: 1000; 
+=======
+  z-index: 10; /* Mantener el navbar por encima */
+>>>>>>> 5b32fe6 (Updating repo)
 }
 
 nav input {
@@ -169,7 +207,11 @@ nav button {
 /*** CARD CONTAINER SECTION ***/
 .cardContainer {
   display: grid;
+<<<<<<< HEAD
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajusta el tamaño de las tarjetas */
+=======
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajustar el tamaño de las tarjetas */
+>>>>>>> 5b32fe6 (Updating repo)
   gap: 10px; /* Espaciado entre tarjetas */
   margin: 10px; 
 }
@@ -228,6 +270,15 @@ nav button {
   background-color: rgb(25, 140, 180); 
 }
 
+<<<<<<< HEAD
+=======
+/*** CARD HOVER EFFECT ***/
+.card:hover {
+  transform: scale(1.03); /* Añadir un leve aumento al hacer hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Mejorar el sombreado */
+}
+
+>>>>>>> 5b32fe6 (Updating repo)
 /*** BUTTONS SECTION ***/
 .categoryBtn {
   display: flex;
@@ -238,7 +289,12 @@ nav button {
 }
 
 .categoryBtn button {
+<<<<<<< HEAD
   width: 130px;
+=======
+  width: auto; /* Ajustar ancho dinámico */
+  min-width: 130px; /* Asegurar un ancho mínimo */
+>>>>>>> 5b32fe6 (Updating repo)
   height: 33px;
   background-color: rgb(255, 108, 108);
   border: none;
@@ -251,5 +307,29 @@ nav button {
 
 .categoryBtn button:hover {
   background-color: rgb(220, 70, 70); 
+<<<<<<< HEAD
   transform: scale(1.05); 
+=======
+  transform: scale(1.05); /* Efecto de aumento al hacer hover */
+}
+
+/* **RESPONSIVE ADJUSTMENTS** */
+@media (max-width: 800px) {
+  .mainContent {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .header, .footer {
+    font-size: 20px;
+  }
+  
+  .centralContent {
+    padding: 15px; /* Mayor separación para pantallas pequeñas */
+  }
+>>>>>>> 5b32fe6 (Updating repo)
 }
